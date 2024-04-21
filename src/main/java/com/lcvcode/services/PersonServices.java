@@ -25,7 +25,6 @@ public class PersonServices {
     }
 
 
-
     public Person findById(String id) {
         logger.info("Finding one person!");
         var person = new Person();
@@ -34,6 +33,16 @@ public class PersonServices {
         person.setLastName("Costa");
         person.setAdress("Uberlânda - Minas Gerais - Brasil");
         person.setGender("Male");
+        return person;
+    }
+
+    public Person create(Person person) {
+        logger.info("Creating one person!");
+        return person;
+    }
+
+    public Person update(Person person) {
+        logger.info("update one person!");
         return person;
     }
 
