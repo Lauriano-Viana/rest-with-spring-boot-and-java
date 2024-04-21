@@ -46,6 +46,11 @@ public class PersonServices {
         return person;
     }
 
+    public void delete(String id) {
+        logger.info("delete one person!");
+
+    }
+
     private Person mockPerson(int i) {
 
         var person = new Person();
